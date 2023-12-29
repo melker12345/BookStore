@@ -1,8 +1,9 @@
 body {
-    font-family: 'Inter';
+        font-family: 'Inter';
     line-height: 1.4;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
 }
 
@@ -38,17 +39,18 @@ a {
     text-transform: capitalize;
 }
 
-button{
+button {
     border: none;
 }
 
-button:hover{
+button:hover {
     cursor: pointer;
-    transform: scale(1.02);   
+    transform: scale(1.02);
     transition-duration: 100ms;
 }
 
 main {
+    max-width: 1920px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -57,9 +59,11 @@ main {
 
 .navbar {
     width: 90%;
+    max-width: 1920px;
     height: fit-content;
-    margin-top: 18px;
-    margin-bottom: 18px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+
 }
 
 .navbar ul {
@@ -68,8 +72,8 @@ main {
     justify-content: space-between;
     flex-direction: row;
     list-style: none;
-    margin-top: 8px;
-    margin-bottom: 8px;
+    margin-top: 4px;
+    margin-bottom: 4px;
 }
 
 .navbar ul li a {
@@ -78,11 +82,10 @@ main {
 }
 
 .favicon {
-
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 38px;
+    width: 28px;
     height: auto;
     flex-shrink: 0;
 }
@@ -94,14 +97,16 @@ main {
 }
 
 .svg-div svg {
+    height: 24px;
+    width: auto;
     padding-right: 14px;
     padding-left: 14px;
 }
 
 .ver-line {
-    height: 100%;
+    height: 24px;
     width: 2px;
-    background: #000;
+    background: #8f8f8f;
 
 }
 
@@ -109,7 +114,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 85%;
+    width: 100%;
     height: 1px;
     background: #000;
     margin-top: 10px;
@@ -139,6 +144,7 @@ main {
 .text-area h6 {
     margin-top: 0;
 }
+
 .image-area img {
     width: 100%;
     max-width: 400px;
@@ -195,11 +201,46 @@ main {
     margin-right: 5px;
 }
 
+.explore-con {
+    border: #000 solid 1px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.explore-con h4 {
+    margin-bottom: 0;
+}
+
+.explore {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.explore-nav{
+    height: 50px;
+    width: 100%;
+    border: #000 solid 1px;
+}
+
+
 .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 1px solid #ddd;
     padding: 10px;
     border-radius: 5px;
     margin: 10px;
+    width: 33%;
+}
+
+.card img {
+    width: 50%;
 }
 
 /* Responsive design */
