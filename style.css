@@ -1,0 +1,215 @@
+body {
+    font-family: 'Inter';
+    line-height: 1.4;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    color: #000;
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    /* 43.2px */
+    text-transform: uppercase;
+
+}
+
+h6 {
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+a {
+    color: #000;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+button{
+    border: none;
+}
+
+button:hover{
+    cursor: pointer;
+    transform: scale(1.02);   
+    transition-duration: 100ms;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.navbar {
+    width: 90%;
+    height: fit-content;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    list-style: none;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.favicon {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.svg-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.svg-div svg {
+    padding-right: 14px;
+    padding-left: 14px;
+}
+
+.ver-line {
+    height: 100%;
+    width: 2px;
+    background: #000;
+
+}
+
+.line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    height: 1px;
+    background: #000;
+    margin-top: 10px;
+    margin-bottom: 18px;
+
+}
+
+.hero {
+    margin: 18px;
+    padding: 50px;
+    width: 80%;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    background: #f1f1f1;
+    border-radius: 15px;
+}
+
+.text-area {
+    width: 50%;
+}
+
+.text-area h1 {
+    margin-bottom: 0;
+}
+
+.text-area h6 {
+    margin-top: 0;
+}
+.image-area img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+.button-area {
+    margin-top: 100px;
+    color: #000;
+    display: flex;
+    width: 360px;
+    height: 55px;
+
+
+}
+
+#read-more-btn {
+    border-radius: 10px;
+    width: 183px;
+    height: 55px;
+    flex-shrink: 0;
+    border: 1px solid #989898;
+    color: #000;
+    background-color: #fff;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-right: 12px;
+}
+
+#buy-btn {
+    display: flex;
+    width: 125px;
+    height: 55px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #000;
+    color: #FFF;
+    background-color: #000;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+#buy-btn svg {
+    margin-right: 5px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .text-area,
+    .image-area {
+        width: 100%;
+    }
+}
